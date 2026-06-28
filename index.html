@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Recorder</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Expense Recorder</h1>
+
+    <div class="sub-container">
+
+        <form id="expenseForm" class="form_container">
+            <input type="text" id="item" placeholder="Enter Item" required>
+
+            <input type="number" id="price" placeholder="Enter Price" required>
+
+            <button type="submit" class="submit">Add Expense</button>
+        </form>
+
+        <div class="expense-container">
+
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                </tbody>
+            </table>
+
+            <h2>Total: ₹<span id="total">0</span></h2>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
